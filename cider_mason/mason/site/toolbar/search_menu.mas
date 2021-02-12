@@ -3,10 +3,10 @@
     <li><a href="/breeders/search">Wizard</a></li>
     <li role="separator" class="divider"></li>
     <li><a href="/search/phenotypes/stock">Germplasm Collection</a></li>
-     <li><a href="/search/cross">Progenies and Crosses</a></li>
+    <li><a href="/search/cross">Progenies and Crosses</a></li>
     <li><a href="/search/trials">Orchards</a></li>
     <li><a href="/search/genotyping_trials">Genotyping Plates</a></li>
-     <li role="separator" class="divider"></li>
+    <li role="separator" class="divider"></li>
     <li><a href="/search/traits">Traits</a></li>
     <li><a href="/search/markers">Markers</a></li>
     <li><a href="/search/images">Images</a></li>
