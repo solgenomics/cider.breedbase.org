@@ -2,7 +2,7 @@ version: "3.7"
 
 services:
   breedbase:
-    image: breedbase/breedbase:v0.10
+    image: breedbase/breedbase:v0.57
     depends_on:
       - breedbase_db
     container_name: breedbase_web
@@ -38,8 +38,17 @@ services:
         source: ${HOME}/cider
         target: /home/production/uiskin
       - type: bind
-        source: ${HOME}/shared_dir
-        target: /home/production/shared_dir
+        source: ${HOME}/logs
+        target: /home/production/logs
+      - type: bind
+        source: ${HOME}/crontab
+        target: /etc/crontab
+      - type: bind
+        source: ${HOME}/db_dumps
+        target: /db_dumps
+      - type: bind
+        source: /home/production/sgn
+        target: /home/production/cxgn/sgn
 
   breedbase_db:
     image: breedbase/pg:latest
@@ -47,6 +56,10 @@ services:
 #    ports:
 #      - 5431:5432
     volumes:
+#      - type: bind
+#        source: /home/production/db_dumps
+#        target: /home
       - type: bind
         source: /home/production/pgdata
         target: /var/lib/postgresql/data
+
