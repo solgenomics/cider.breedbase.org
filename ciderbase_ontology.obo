@@ -1,0 +1,347 @@
+format-version: 1.2
+data-version: 1
+saved-by: naama
+default-namespace: ciderbase_ontology
+remark: none
+ontology: ciderbase_ontology
+
+[Term]
+id: CIDER:0000001
+name: CiderBase trait ontology
+
+[Term]
+id: CIDER:0000002
+name: Fruit
+is_a: CIDER:0000001 ! CiderBase trait ontology
+
+[Term]
+id: CIDER:0000003
+name: Juice
+is_a: CIDER:0000001 ! CiderBase trait ontology
+
+[Term]
+id: CIDER:0000004
+name: Tree
+is_a: CIDER:0000001 ! CiderBase trait ontology
+
+[Term]
+id: CIDER:0000005
+name: fruit mass per apple (g)
+def: "Total mass divided by number of measured fruit" []
+is_a: CIDER:0000017 ! Variables
+relationship: variable_of CIDER:0000002 ! Fruit
+
+[Term]
+id: CIDER:0000006
+name: fruit diameter per apple (mm)
+def: "Fruit diameter per apple measured in millimeters" []
+is_a: CIDER:0000017 ! Variables
+relationship: variable_of CIDER:0000002 ! Fruit
+
+[Term]
+id: CIDER:0000007
+name: red peel color percentage visual assesment
+def: "Assessed visually as the area of the fruit peel with red coloration (0-100%)" []
+is_a: CIDER:0000017 ! Variables
+relationship: variable_of CIDER:0000002 ! Fruit
+
+[Term]
+id: CIDER:0000008
+name: green/yellow peel color observation 1-5
+def: "Assessed visually as the area of the fruit peel between 1 (yellow) to 5 (green) using the Cornell McIntosh apple color chart" []
+is_a: CIDER:0000017 ! Variables
+relationship: variable_of CIDER:0000002 ! Fruit
+
+[Term]
+id: CIDER:0000009
+name: flesh firmness (N)
+def: "Measured on both the sun- and the shade-exposed sides of each fruit along the equator with a penetrometer fitted with an 11.1-mm-diameter tip" []
+is_a: CIDER:0000017 ! Variables
+relationship: variable_of CIDER:0000002 ! Fruit
+
+[Term]
+id: CIDER:0000010
+name: starch pattern index 1-8
+def: "Rated on a 1- to 8-point scale on a cross-sectional slice of each sample apple. 1 = 0% starch degradation and 8 = 100% starch degradation" []
+is_a: CIDER:0000017 ! Variables
+relationship: variable_of CIDER:0000002 ! Fruit
+
+[Term]
+id: CIDER:0000011
+name: sunburn incidence 1-4 scale
+def: "Fruit sunburn was evaluated on an anchored 1-4 scale for each apple harvested, where 1 = indicated no sunburn present on the fruit and 4 = indicated severe fruit sunburn." []
+is_a: CIDER:0000017 ! Variables
+relationship: variable_of CIDER:0000002 ! Fruit
+
+[Term]
+id: CIDER:0000012
+name: chlorophyll A content 0-3
+def: "Measured on a 0- to 3-point index on both the sun and the shade side of each apple along the equator using the Turoni 53500 DA meter (Forli, Italy)" []
+is_a: CIDER:0000017 ! Variables
+relationship: variable_of CIDER:0000002 ! Fruit
+
+[Term]
+id: CIDER:0000013
+name: internal browning percentage
+def: "Percentage of fruit with internal browning " []
+is_a: CIDER:0000017 ! Variables
+relationship: variable_of CIDER:0000002 ! Fruit
+
+[Term]
+id: CIDER:0000014
+name: watercore percentage
+def: "Percentage of fruit with watercore" []
+is_a: CIDER:0000017 ! Variables
+relationship: variable_of CIDER:0000002 ! Fruit
+
+[Term]
+id: CIDER:0000015
+name: fruit cracking visual observation 1-4
+def: "Fruit cracking evaluated on an anchored 1-4 scale for each apple harvested, where 1 = no fruit cracking and 4 = severe fruit cracking" []
+is_a: CIDER:0000017 ! Variables
+relationship: variable_of CIDER:0000002 ! Fruit
+
+[Term]
+id: CIDER:0000017
+name: Variables
+is_a: CIDER:0000001 ! CiderBase trait ontology
+
+[Term]
+id: CIDER:0000018
+name: titratable acidity of juice (g malic acid/L)
+def: "A 5-mL composite juice sample was titrated against a 0.1 M NaOH solution to an endpoint of pH 8.2 and expressed in grams per liter of malic acid equivalents" []
+is_a: CIDER:0000017 ! Variables
+relationship: variable_of CIDER:0000003 ! Juice
+
+[Term]
+id: CIDER:0000019
+name: pH juice (1-14)
+def: "Measured on a composite juice sample with a temperature compensating pH meter" []
+is_a: CIDER:0000017 ! Variables
+relationship: variable_of CIDER:0000003 ! Juice
+
+[Term]
+id: CIDER:0000021
+name: total polyphenols (g GAEL/L)
+def: "Measured on a composite juice sample with the Folin Ciocalteu assay in a 96-well microplate at 765 nm" []
+is_a: CIDER:0000017 ! Variables
+relationship: variable_of CIDER:0000003 ! Juice
+
+[Term]
+id: CIDER:0000022
+name: soluble solid concentration (Brix)
+def: "Measured on a composite juice sample with a temperature compensating refractometer" []
+is_a: CIDER:0000017 ! Variables
+relationship: variable_of CIDER:0000003 ! Juice
+
+[Term]
+id: CIDER:0000023
+name: glucose (g/L)
+def: "Measured on a composite juice sample using the Sucrose/D-Fructose/D-Glucose Assay Kit (KSUFRG) (Megazyme International, Ireland)" []
+is_a: CIDER:0000017 ! Variables
+relationship: variable_of CIDER:0000003 ! Juice
+
+[Term]
+id: CIDER:0000024
+name: frucose (g/L)
+def: "Measured on a composite juice sample using the Sucrose/D-Fructose/D-Glucose Assay Kit (KSUFRG) (Megazyme International, Ireland)" []
+is_a: CIDER:0000017 ! Variables
+relationship: variable_of CIDER:0000003 ! Juice
+
+[Term]
+id: CIDER:0000025
+name: sucrose (g/L)
+def: "Measured on a composite juice sample using the Sucrose/D-Fructose/D-Glucose Assay Kit (KSUFRG) (Megazyme International, Ireland)" []
+is_a: CIDER:0000017 ! Variables
+relationship: variable_of CIDER:0000003 ! Juice
+
+[Term]
+id: CIDER:0000026
+name: sorbitol (g/L)
+def: "Measured on a composite juice sample using the D-Sorbitol/Xylitol Assay Kit (K-SORB) (Megazyme International, Ireland)" []
+is_a: CIDER:0000017 ! Variables
+relationship: variable_of CIDER:0000003 ! Juice
+
+[Term]
+id: CIDER:0000027
+name: full bloom date mm/dd/yyyy
+def: "Calendar date on which ≥50% of blossoms on a tree were open. Trees were assessed visually based on Chapman, P.J. and G.A. Catlin. 1976. Growth Stages in Fruit Trees—From Dormant to Fruit Set, New York’s Food and Life Sciences Bulletin. Cornell University, Geneva, NY, Bulletin No. 58" []
+is_a: CIDER:0000017 ! Variables
+relationship: variable_of CIDER:0000004 ! Tree
+
+[Term]
+id: CIDER:0000028
+name: harvest date mm/dd/yyyy
+def: "Apples harvested when the mean starch pattern index value is between 6-8" []
+is_a: CIDER:0000017 ! Variables
+relationship: variable_of CIDER:0000004 ! Tree
+
+[Term]
+id: CIDER:0000029
+name: biennial bearing index (0-1)
+def: "A measure of variation in yield among consecutive year pairs. A value of 0 indicates completely consistent yields from year to year, while a value of 1 indicates that in one year there was a complete absence of fruit borne on the tree." []
+is_a: CIDER:0000017 ! Variables
+relationship: variable_of CIDER:0000004 ! Tree
+
+[Term]
+id: CIDER:0000030
+name: TCSA - trunk cross-sectional area in square cm.
+def: "Trunk cross-sectional area. Two trunk diameter measurements were taken 30 cm above the graft union and averaged; this value was then converted to TCSA using the area formula for a circle A=πr2. TCSA may also be calculated from the circumference of the trunk." []
+is_a: CIDER:0000017 ! Variables
+relationship: variable_of CIDER:0000004 ! Tree
+
+[Term]
+id: CIDER:0000031
+name: Green Tip Date mm/dd/yyyy
+def: "Trees were assessed visually based on Chapman, P.J. and G.A. Catlin. 1976. Growth Stages in Fruit Trees—From Dormant to Fruit Set, New York’s Food and Life Sciences Bulletin. Cornell University, Geneva, NY, Bulletin No. 58." []
+is_a: CIDER:0000017 ! Variables
+relationship: variable_of CIDER:0000004 ! Tree
+
+[Term]
+id: CIDER:0000032
+name: Pink Flower Stage Date mm/dd/yyyy
+def: "Trees were assessed visually based on Chapman, P.J. and G.A. Catlin. 1976. Growth Stages in Fruit Trees—From Dormant to Fruit Set, New York’s Food and Life Sciences Bulletin. Cornell University, Geneva, NY, Bulletin No. 58." []
+is_a: CIDER:0000017 ! Variables
+relationship: variable_of CIDER:0000004 ! Tree
+
+[Term]
+id: CIDER:0000033
+name: Petal Fall Date mm/dd/yyyy
+def: "Trees were assessed visually based on Chapman, P.J. and G.A. Catlin. 1976. Growth Stages in Fruit Trees—From Dormant to Fruit Set, New York’s Food and Life Sciences Bulletin. Cornell University, Geneva, NY, Bulletin No. 58." []
+is_a: CIDER:0000017 ! Variables
+relationship: variable_of CIDER:0000004 ! Tree
+
+[Term]
+id: CIDER:0000034
+name: Days between Pink to Petal Fall Flower Stages
+def: "Number of calendar days from pink to petal fall flowering stages." []
+is_a: CIDER:0000017 ! Variables
+relationship: variable_of CIDER:0000004 ! Tree
+
+[Term]
+id: CIDER:0000035
+name: Days between Full Bloom to Harvest
+def: "Number of calendar days from full bloom (≥50% of blooms open) until fruit were harvested from the tree" []
+is_a: CIDER:0000017 ! Variables
+relationship: variable_of CIDER:0000004 ! Tree
+
+[Term]
+id: CIDER:0000036
+name: Pre-harvest drop percentage
+def: "Percent of all fruit borne on a tree that dropped to the ground prior to harvest. If drops were counted and removed on multiple dates leading up to harvest, drop counts for all dates were summed. This number was then divided by the total number of tree-harvested fruit plus all pre-harvest drops." []
+is_a: CIDER:0000017 ! Variables
+relationship: variable_of CIDER:0000004 ! Tree
+
+[Term]
+id: CIDER:0000037
+name: Total crop number
+def: "The total number of fruit per tree. Calculated as the sum of all pre-harvest drops plus all fruit harvested from the tree." []
+is_a: CIDER:0000017 ! Variables
+relationship: variable_of CIDER:0000004 ! Tree
+
+[Term]
+id: CIDER:0000038
+name: Estimated total yield per tree (kg)
+def: "The total mass of fruit borne on a tree. Total mass of fruit harvested on-tree (kg), plus estimated total drop mass (kg). Total pre-harvest drop mass was estimated by multiplying total drop count by average fruit mass." []
+is_a: CIDER:0000017 ! Variables
+relationship: variable_of CIDER:0000004 ! Tree
+
+[Term]
+id: CIDER:0000039
+name: Yield efficiency (kg/cm2 TCSA)
+def: "The total mass (kg) of fruit borne on a tree, divided by its trunk cross- sectional area (TCSA), as measured 30 cm above the graft union. Yield mass calculated as the sum of the mass of all pre-harvest drops plus all fruit harvested from the tree." []
+is_a: CIDER:0000017 ! Variables
+relationship: variable_of CIDER:0000004 ! Tree
+
+[Term]
+id: CIDER:0000040
+name: Crop density (fruits/cm2 TCSA)
+def: "The total number of fruit borne on a tree, divided by its trunk cross-sectional area (TCSA), as measured 30 cm above the graft union. Fruit count calculated as the sum of all pre-harvest drops plus all fruit harvested from the tree." []
+is_a: CIDER:0000017 ! Variables
+relationship: variable_of CIDER:0000004 ! Tree
+
+[Term]
+id: CIDER:0000041
+name: Maximum fermentation rate (mg sugar/L/h)
+def: "Sterile juice samples were inoculated with a commercial yeast strain. Ferments were weighed daily. Mass of flask and airlock were subtracted from total mass. Daily values were plotted against day number. Maximum fermentation rate was determined by calculating the slope of the fermentation curve during the exponential phase of yeast growth. Reference: Karl AD, Brown MG, Ma S, Sandbrook A, Stewart AC, Cheng L, Mansfield AK, Peck GM. 2020. Foliar urea applications increase yeast assimilable nitrogen concentration and alcoholic fermentation rate in ‘Red Spy’ apples used for cider production. HortScience. 55(8):1356–1364." []
+xref: doi:10.21273/HORTSCI15029-20
+is_a: CIDER:0000017 ! Variables
+relationship: variable_of CIDER:0000050 ! fermented cider
+
+[Term]
+id: CIDER:0000042
+name: Residual sugars fermented cider (enzymatic)
+def: "Residual sugars in fermented ciders were measured using a Megazyme Sucrose, D-Fructose, and D-Glucose kit in a 96-well microplate spectrophotometric method at λ=340 nm." []
+is_a: CIDER:0000017 ! Variables
+relationship: variable_of CIDER:0000050 ! fermented cider
+
+[Term]
+id: CIDER:0000043
+name: Residual sugars fermented cider (ion chromatograph)
+def: "Residual sugars in fermented ciders (diluted 1,600 to 4,000 fold with HPLC grade water) were measured on an ion chromatograph (Dionex(TM) ICS-5000 fitted with an ED50 amperometric detector. Sunnyvale, CA) using a 25 ul sample loop and CarboPac PA1 guard (4 mm x 50 mm; P/N 0309) and CarboPac analytical (4 mm x 250 mm; P/N 035391) columns. Samples were injected into filtered and degassed 200 mM NaOH eluant carrier at 1 ml/min. Sugar concentrations were calculated with Dionex Chromeleon(TM) 7 software using a seven-point standard curve with a polynomial fit in the range of 1.25- 40 mg/g (Sorbitol and Glucose) and 2.5-80 mg/g (Fructose and Sucrose)" []
+is_a: CIDER:0000017 ! Variables
+relationship: variable_of CIDER:0000050 ! fermented cider
+
+[Term]
+id: CIDER:0000044
+name: Primary Amino Nitrogen (mg N/L)
+def: "Primary amino nitrogen (PAN) was determined using PAN-NOPA, a modified Megazyme (Bray, Ireland) protocol for measuring amino nitrogen in juices for wine- and cidermaking. Cells contained 3.33 μL of samples suspended in 200 μL N-acetyl-L-cysteine (NAC) buffer solution and 3.33 μL Milli-Q deionized water. Absorbance at 340 nm was read approximately two minutes after the last cell was pipetted, and again 15 minutes after adding 6.67 μL ortho-phthaldialdehyde (OPA) to each sample, also at 340 nm. Reference: Karl AD, Brown MG, Ma S, Sandbrook A, Stewart AC, Cheng L, Mansfield AK, Peck GM. 2020. Foliar urea applications increase yeast assimilable nitrogen concentration and alcoholic fermentation rate in ‘Red Spy’ apples used for cider production. HortScience. 55(8):1356–1364." []
+xref: doi:10.21273/HORTSCI15029-20
+is_a: CIDER:0000017 ! Variables
+relationship: variable_of CIDER:0000003 ! Juice
+
+[Term]
+id: CIDER:0000045
+name: Fructose (Ion Chromatograph)
+def: "Residual sugars in fermented ciders (diluted 1,600 to 4,000 fold with HPLC grade water) were measured on an ion chromatograph (Dionex(TM) ICS-5000 fitted with an ED50 amperometric detector. Sunnyvale, CA) using a 25 ul sample loop and CarboPac PA1 guard (4 mm x 50 mm; P/N 0309) and CarboPac analytical (4 mm x 250 mm; P/N 035391) columns. Samples were injected into filtered and degassed 200 mM NaOH eluant carrier at 1 ml/min. Sugar concentrations were calculated with Dionex Chromeleon(TM) 7 software using a seven-point standard curve with a polynomial fit in the range of 1.25- 40 mg/g (Sorbitol and Glucose) and 2.5-80 mg/g (Fructose and Sucrose)" []
+is_a: CIDER:0000017 ! Variables
+relationship: variable_of CIDER:0000003 ! Juice
+
+[Term]
+id: CIDER:0000046
+name: Sucrose (Ion Chromatograph)
+def: "Residual sugars in fermented ciders (diluted 1,600 to 4,000 fold with HPLC grade water) were measured on an ion chromatograph (Dionex(TM) ICS-5000 fitted with an ED50 amperometric detector. Sunnyvale, CA) using a 25 ul sample loop and CarboPac PA1 guard (4 mm x 50 mm; P/N 0309) and CarboPac analytical (4 mm x 250 mm; P/N 035391) columns. Samples were injected into filtered and degassed 200 mM NaOH eluant carrier at 1 ml/min. Sugar concentrations were calculated with Dionex Chromeleon(TM) 7 software using a seven-point standard curve with a polynomial fit in the range of 1.25- 40 mg/g (Sorbitol and Glucose) and 2.5-80 mg/g (Fructose and Sucrose)" []
+is_a: CIDER:0000017 ! Variables
+relationship: variable_of CIDER:0000003 ! Juice
+
+[Term]
+id: CIDER:0000047
+name: Sorbitol (Ion Chromatograph)
+def: "Residual sugars in fermented ciders (diluted 1,600 to 4,000 fold with HPLC grade water) were measured on an ion chromatograph (Dionex(TM) ICS-5000 fitted with an ED50 amperometric detector. Sunnyvale, CA) using a 25 ul sample loop and CarboPac PA1 guard (4 mm x 50 mm; P/N 0309) and CarboPac analytical (4 mm x 250 mm; P/N 035391) columns. Samples were injected into filtered and degassed 200 mM NaOH eluant carrier at 1 ml/min. Sugar concentrations were calculated with Dionex Chromeleon(TM) 7 software using a seven-point standard curve with a polynomial fit in the range of 1.25- 40 mg/g (Sorbitol and Glucose) and 2.5-80 mg/g (Fructose and Sucrose)" []
+is_a: CIDER:0000017 ! Variables
+relationship: variable_of CIDER:0000003 ! Juice
+
+[Term]
+id: CIDER:0000048
+name: Glucose (Ion Chromatograph)
+def: "Residual sugars in fermented ciders (diluted 1,600 to 4,000 fold with HPLC grade water) were measured on an ion chromatograph (Dionex(TM) ICS-5000 fitted with an ED50 amperometric detector. Sunnyvale, CA) using a 25 ul sample loop and CarboPac PA1 guard (4 mm x 50 mm; P/N 0309) and CarboPac analytical (4 mm x 250 mm; P/N 035391) columns. Samples were injected into filtered and degassed 200 mM NaOH eluant carrier at 1 ml/min. Sugar concentrations were calculated with Dionex Chromeleon(TM) 7 software using a seven-point standard curve with a polynomial fit in the range of 1.25- 40 mg/g (Sorbitol and Glucose) and 2.5-80 mg/g (Fructose and Sucrose)" []
+is_a: CIDER:0000017 ! Variables
+relationship: variable_of CIDER:0000003 ! Juice
+
+[Term]
+id: CIDER:0000049
+name: pH fermented cider (1-14)
+def: "Measured on a composite sample of fermented cider with a temperature compensating pH meter" []
+is_a: CIDER:0000017 ! Variables
+relationship: variable_of CIDER:0000050 ! fermented cider
+
+[Term]
+id: CIDER:0000050
+name: fermented cider
+is_a: CIDER:0000001 ! CiderBase trait ontology
+
+[Term]
+id: CIDER:0000051
+name: titratable acidity of finished cider (g malic acid/L)
+def: "A 5-mL composite sample of fermented cider was titrated against a 0.1 M NaOH solution to an endpoint of pH 8.2 and expressed in grams per liter of malic acid equivalents" []
+is_a: CIDER:0000017 ! Variables
+relationship: variable_of CIDER:0000050 ! fermented cider
+
+[Term]
+id: CIDER:0000052
+name: total polyphenols of finished cider (g GAEL/L)
+def: "Measured on a composite sample of fermented cider with the Folin Ciocalteu assay in a 96-well microplate at 765 nm. Reference: Karl AD, Brown MG, Ma S, Sandbrook A, Stewart AC, Cheng L, Mansfield AK, Peck GM. 2020. Foliar urea applications increase yeast assimilable nitrogen concentration and alcoholic fermentation rate in ‘Red Spy’ apples used for cider production. HortScience. 55(8):1356–1364." []
+xref: doi:10.21273/HORTSCI15029-20
+is_a: CIDER:0000017 ! Variables
+relationship: variable_of CIDER:0000003 ! Juice
+
